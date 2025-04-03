@@ -25,7 +25,7 @@ jobs:
 
     # Si las pruebas fallan, subir los reportes para revisarlos
     - name: Upload Surefire Test Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: failure()
       with:
         name: surefire-reports
